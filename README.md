@@ -46,22 +46,31 @@ Representa uma solicitação de sangue feita por um particular ou instituição,
 ### Donator
 
 Representa um doador de sangue, mantendo informações como última data de doação e disponibilidade para doação.
+![image](https://github.com/manuel-joao2023/sistema-doacao-sangue/assets/134264511/b753a105-fe48-4544-b2b0-12a2fc829b00)
+
 
 ### DonatorHospital
 
 Associa um doador a um hospital para futuras doações.
+![image](https://github.com/manuel-joao2023/sistema-doacao-sangue/assets/134264511/6f5d3e44-8746-410f-b678-5119ea1127e0)
+
 
 ### HospitalRequest
 
 Associa uma solicitação de sangue a um hospital.
+![image](https://github.com/manuel-joao2023/sistema-doacao-sangue/assets/134264511/64e2bbea-4ff2-48c2-a927-43df0efd9ec2)
+
 
 ### Support
 
 Representa os dados de apoios ao sistema, como paises, provincias, municipios, grupos sanguineos e outros.
+![image](https://github.com/manuel-joao2023/sistema-doacao-sangue/assets/134264511/b50112e3-e91b-479a-b9c0-128fa4392b45)
 
 ### User
 
 Representa um usuário do sistema, com informações como nome de usuário, senha, e-telefone e tipo de usuário.
+![image](https://github.com/manuel-joao2023/sistema-doacao-sangue/assets/134264511/48cbb9a9-dbde-430b-87ad-c6937a0836dd)
+
 
 ## Requisitos do Sistema
 
