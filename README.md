@@ -66,7 +66,6 @@ Representa um usuário do sistema, com informações como nome de usuário, senh
 ## Requisitos do Sistema
 
 - C# 7.0
-- WebApi
 - Banco de dados Postgresql
 - MAUI
 
