@@ -52,6 +52,7 @@ Representa um doador de sangue, mantendo informações como última data de doa�
 ### DonatorHospital
 
 Associa um doador a um hospital para futuras doações.
+
 ![image](https://github.com/manuel-joao2023/sistema-doacao-sangue/assets/134264511/6f5d3e44-8746-410f-b678-5119ea1127e0)
 
 
