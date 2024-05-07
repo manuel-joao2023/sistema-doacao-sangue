@@ -2,6 +2,19 @@
 
 O Sistema de Doação de Sangue é uma aplicação desenvolvida para facilitar a coordenação e gestão de doações de sangue entre doadores, particulares e campanhas de doação. Este sistema permite o registro de doadores, solicitações de sangue e campanhas de doação.
 
+## Arquitetura da Aplicação
+
+Este sistema consiste em duas aplicações distintas:
+
+### Back-end Web API (C#)
+
+O back-end é desenvolvido em C# e consiste em uma API RESTful que lida com a lógica de negócios, interage com o banco de dados e fornece serviços para o front-end.
+
+### Front-end (.NET MAUI)
+
+O front-end é desenvolvido com .NET MAUI, fornecendo uma interface de usuário moderna e responsiva para os usuários interagirem com o sistema.
+
+
 ## Funcionalidades
 
 - Cadastro e gerenciamento de doadores de sangue.
