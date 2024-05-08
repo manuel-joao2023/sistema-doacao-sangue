@@ -85,9 +85,27 @@ Representa um usuário do sistema, com informações como nome de usuário, senh
 
 ![image](https://github.com/manuel-joao2023/sistema-doacao-sangue/assets/134264511/48cbb9a9-dbde-430b-87ad-c6937a0836dd)
 
-# Diagrama
+## Diagrama
 
 ![image](https://github.com/manuel-joao2023/sistema-doacao-sangue/assets/134264511/ac9ff34e-d6c0-406e-8e83-238a3c99e914)
+
+## Endpoit
+
+### Campaign
+![image](https://github.com/manuel-joao2023/sistema-doacao-sangue/assets/134264511/b45384e6-d07e-4573-988f-e56e2d683cef)
+
+### Donator
+![image](https://github.com/manuel-joao2023/sistema-doacao-sangue/assets/134264511/b7a8c6bd-f1db-4b7b-8422-21c74d0f7f88)
+
+### Requests
+![image](https://github.com/manuel-joao2023/sistema-doacao-sangue/assets/134264511/2fa7a5ad-25c3-4a32-afcc-5ac82a156ecb)
+
+### Supports
+![image](https://github.com/manuel-joao2023/sistema-doacao-sangue/assets/134264511/19d832ad-4cee-4a6b-9e55-8a164d0181b9)
+
+### Users
+![image](https://github.com/manuel-joao2023/sistema-doacao-sangue/assets/134264511/6c559a53-e96a-415e-a643-1b85abf21945)
+
 
 ## Requisitos do Sistema
 
