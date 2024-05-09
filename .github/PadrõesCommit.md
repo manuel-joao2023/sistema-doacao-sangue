@@ -21,3 +21,5 @@ fix: Correções de bugs.
 `test: add missing tests for posts hook`
 
 **Vale lembrar que o "escopo" é opcional.**
+
+_Mais informações: [Organizar commit](https://www.tabnews.com.br/guscsales/uma-maneira-de-organizar-suas-branches-commits-e-pull-requests)_
