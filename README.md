@@ -123,6 +123,7 @@ Representa um usuário do sistema, com informações como nome de usuário, senh
 
 ## Padrões
 Commit : [Padrões Commit](https://github.com/manuel-joao2023/sistema-doacao-sangue/blob/main/.github/Padr%C3%B5esCommit.md).
+Pull Request: [Padrões Pull Request](https://github.com/manuel-joao2023/sistema-doacao-sangue/blob/main/.github/Padr%C3%B5esPullRequest.md)
 
 ## Requisitos do Sistema
 
