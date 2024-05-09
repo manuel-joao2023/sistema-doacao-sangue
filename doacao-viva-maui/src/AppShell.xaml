@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="SalveVidaDoandoApp.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:SalveVidaDoandoApp"
+    xmlns:views="clr-namespace:SalveVidaDoandoApp.Views"
+    BackgroundColor="#001F3F"
+    FlyoutBackgroundColor="White">
+
+    <ShellContent
+        Title="Login"
+        ContentTemplate="{DataTemplate views:LoginPage}"
+        Icon="iconlistdetail.png"
+        Route="LoginPage"
+        Shell.NavBarIsVisible="False" />
+
+    <ShellContent
+        Title="Main"
+        ContentTemplate="{DataTemplate views:MainPage}"
+        Icon="iconblank.png"
+        Route="MainPage"
+        Shell.NavBarIsVisible="true" />
+    <ShellContent
+        Title="ListDetail"
+        ContentTemplate="{DataTemplate views:ListDetailPage}"
+        Icon="iconlistdetail.png"
+        Route="ListDetailPage"
+        Shell.NavBarIsVisible="true" />
+
+    <ShellContent
+        ContentTemplate="{DataTemplate views:RegisterLoginPage}"
+        Route="RegisterLoginPage"
+        Shell.NavBarIsVisible="False" />
+    <ShellContent
+        ContentTemplate="{DataTemplate views:ForgotPasswordPage}"
+        Route="ForgotPasswordPage"
+        Shell.NavBarIsVisible="False" />
+</Shell>

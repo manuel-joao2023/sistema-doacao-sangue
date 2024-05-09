@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="SalveVidaDoandoApp.Views.MainPage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:vm="clr-namespace:SalveVidaDoandoApp.ViewModels"
+    x:DataType="vm:MainViewModel"
+    BackgroundColor="#001F3F">
+
+    <VerticalStackLayout>
+        <Image />
+        <HorizontalStackLayout Margin="215,15,0,40">
+            <Label Text="Bem-vindo: " TextColor="Green" />
+            <Label Text="Admin" TextColor="White" />
+        </HorizontalStackLayout>
+
+        <HorizontalStackLayout Spacing="10" Margin="10">
+            <Button BackgroundColor="#00796B" Text="Solicitar Doador" />
+            <Button BackgroundColor="#00796B" Text="Criar Campanha" />
+            <!--<Button BackgroundColor="#00796B" Text="Criar Entidade" />-->
+        </HorizontalStackLayout>
+
+        <VerticalStackLayout>
+            <GraphicsView
+                BackgroundColor="White"
+                HeightRequest="300"
+                WidthRequest="400" />
+        </VerticalStackLayout>
+
+        <ListView />
+    </VerticalStackLayout>
+
+</ContentPage>
+

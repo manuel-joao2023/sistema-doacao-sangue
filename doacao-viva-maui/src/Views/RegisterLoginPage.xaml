@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="SalveVidaDoandoApp.Views.RegisterLoginPage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    Title="RegisterLoginPage">
+    <VerticalStackLayout Margin="20,50" Spacing="20">
+        <Image Source="iconlistdetail" />
+
+        <Entry BackgroundColor="White" Placeholder="Nome" />
+        <HorizontalStackLayout>
+            <Label
+                x:Name="checkbok"
+                Margin="10,5,0,0"
+                Text="É doador ?" />
+            <CheckBox
+                BindingContext="checkbox"
+                CheckedChanged="CheckBox_CheckedChanged"
+                Color="Red" />
+        </HorizontalStackLayout>
+
+        <Picker Title="Grupo Sanguíneo" IsVisible="{Binding IsDoador}">
+            <Picker.Items>
+                <x:String>Baboon</x:String>
+                <x:String>Capuchin Monkey</x:String>
+                <x:String>Blue Monkey</x:String>
+                <x:String>Squirrel Monkey</x:String>
+                <x:String>Golden Lion Tamarin</x:String>
+                <x:String>Howler Monkey</x:String>
+                <x:String>Japanese Macaque</x:String>
+            </Picker.Items>
+        </Picker>
+        
+        <Picker Title="Hospitais Proximos" IsVisible="{Binding IsDoador}">
+            <Picker.Items>
+                <x:String>Baboon</x:String>
+                <x:String>Capuchin Monkey</x:String>
+                <x:String>Blue Monkey</x:String>
+                <x:String>Squirrel Monkey</x:String>
+                <x:String>Golden Lion Tamarin</x:String>
+                <x:String>Howler Monkey</x:String>
+                <x:String>Japanese Macaque</x:String>
+            </Picker.Items>
+        </Picker>
+
+        
+
+        <Entry BackgroundColor="White" Placeholder="Email | Telefone" />
+
+        <Entry
+            BackgroundColor="White"
+            IsPassword="True"
+            Placeholder="Senha" />
+        
+        <Entry
+            BackgroundColor="White"
+            IsPassword="True"
+            Placeholder="Confirmar Senha" />
+
+        <Button Margin="0,15" Text="Registar" />
+
+
+    </VerticalStackLayout>
+</ContentPage>

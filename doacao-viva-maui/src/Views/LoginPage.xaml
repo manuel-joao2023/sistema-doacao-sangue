@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="SalveVidaDoandoApp.Views.LoginPage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    Title="LoginPage"
+    BackgroundColor="#001F3F">
+
+    <VerticalStackLayout Margin="20,100" Spacing="20">
+        <Image
+            HeightRequest="100"
+            Source="drop_of_blood"
+            WidthRequest="100" />
+        <Label
+            FontFamily="Roboto-Regular"
+            Text="Email | Telefone"
+            TextColor="White" />
+
+        <Entry
+            BackgroundColor="#003366"
+            Text="{Binding Username}"
+            TextColor="White" />
+
+        <Label
+            FontFamily="Roboto-Regular"
+            Text="Senha"
+            TextColor="White" />
+        <Entry
+            BackgroundColor="#003366"
+            IsPassword="True"
+            Text="{Binding Password}"
+            TextColor="White" />
+
+        <Button
+            Margin="0,15"
+            BackgroundColor="#00796B"
+            Command="{Binding LoginCommand}"
+            Text="Entrar" />
+
+        <Label
+            Margin="10"
+            FontFamily="Roboto-Regular"
+            HorizontalOptions="Center"
+            Text="Esqueceu sua senha?"
+            TextColor="White"
+            VerticalOptions="Center">
+
+            <Label.GestureRecognizers>
+                <TapGestureRecognizer Command="{Binding RoutesCommand}" CommandParameter="ForgotPasswordPage" />
+            </Label.GestureRecognizers>
+
+        </Label>
+
+        <Label
+            Margin="20"
+            FontFamily="Roboto-Regular"
+            HorizontalOptions="Center"
+            Text="Novo Registo"
+            TextColor="White"
+            VerticalOptions="Center">
+
+            <Label.GestureRecognizers>
+                <TapGestureRecognizer Command="{Binding RoutesCommand}" CommandParameter="RegisterLoginPage" />
+            </Label.GestureRecognizers>
+
+        </Label>
+
+    </VerticalStackLayout>
+
+</ContentPage>
