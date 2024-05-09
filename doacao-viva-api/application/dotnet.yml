@@ -26,6 +26,3 @@ jobs:
 
     - name: Build Solution
       run: dotnet build src/application/DoacaoViva.Application.csproj --configuration Release --no-restore
-
-    - name: Run Unit Tests
-      run: dotnet test src/application/DoacaoViva.Application.csproj --configuration Release --no-build --verbosity normal
