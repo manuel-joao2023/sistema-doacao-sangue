@@ -122,7 +122,7 @@ Representa um usuário do sistema, com informações como nome de usuário, senh
 ![image](https://github.com/manuel-joao2023/sistema-doacao-sangue/assets/134264511/6c559a53-e96a-415e-a643-1b85abf21945)
 
 ## Padrões
-Commit : [Padrões Commit](https://github.com/manuel-joao2023/sistema-doacao-sangue/).
+Commit : [Padrões Commit](https://github.com/manuel-joao2023/sistema-doacao-sangue/blob/main/.github/Padr%C3%B5esCommit.md).
 
 ## Requisitos do Sistema
 
