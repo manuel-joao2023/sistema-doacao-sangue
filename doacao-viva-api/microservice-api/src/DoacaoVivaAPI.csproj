@@ -18,9 +18,9 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\DoacaoViva.Infrastructure.GraphQL\DoacaoViva.Infrastructure.GraphQL.csproj" />
-    <ProjectReference Include="..\DoacaoViva.Infrastructure.Message\DoacaoViva.Infrastructure.Notification.csproj" />
-    <ProjectReference Include="..\DoacaoViva.Microservices\DoacaoViva.Infrastructure.Microservices.csproj" />
+    <ProjectReference Include="..\..\infrastructure\src\graphQL\src\DoacaoViva.Infrastructure.GraphQL.csproj" />
+    <ProjectReference Include="..\..\infrastructure\src\microservices\src\DoacaoViva.Infrastructure.Microservices.csproj" />
+    <ProjectReference Include="..\..\infrastructure\src\notification\src\DoacaoViva.Infrastructure.Notification.csproj" />
   </ItemGroup>
 
 </Project>

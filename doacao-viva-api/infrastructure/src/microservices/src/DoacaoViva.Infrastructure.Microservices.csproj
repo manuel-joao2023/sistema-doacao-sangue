@@ -12,7 +12,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\DoacaoViva.Database\DoacaoViva.Infrastructure.Database.csproj" />
+    <ProjectReference Include="..\..\database\src\DoacaoViva.Infrastructure.Database.csproj" />
   </ItemGroup>
 
 </Project>

@@ -14,7 +14,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\DoacaoViva.Domain\DoacaoViva.Domain.csproj" />
+    <ProjectReference Include="..\..\..\..\domain\src\DoacaoViva.Domain.csproj" />
   </ItemGroup>
 
 </Project>

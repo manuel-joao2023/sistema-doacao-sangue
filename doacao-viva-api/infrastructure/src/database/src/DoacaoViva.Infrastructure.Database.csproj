@@ -20,7 +20,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\DoacaoViva.Application\DoacaoViva.Application.csproj" />
+    <ProjectReference Include="..\..\..\..\application\src\DoacaoViva.Application.csproj" />
   </ItemGroup>
 
 </Project>
