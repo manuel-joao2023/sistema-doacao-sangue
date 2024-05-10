@@ -1,7 +1,5 @@
-﻿using DoacaoViva.Application.DTOs;
-using DoacaoViva.Application.Interface;
+﻿using DoacaoViva.Application.Interface;
 using DoacaoViva.Domain.Entitys;
-using HotChocolate.Subscriptions;
 
 namespace DoacaoViva.Infrastructure.GraphQL;
 
