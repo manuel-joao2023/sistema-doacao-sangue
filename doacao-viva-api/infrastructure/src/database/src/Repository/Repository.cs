@@ -43,7 +43,7 @@ public abstract class Repository<T> : ICrudBase<T> where T : BaseEntity {
     }
 
     public virtual async Task<List<T>> GetAllAsync() {
-       return await _doacaoVivaContext.Set<T>().ToListAsync();
+       return await _doacaoVivaContext.Set<T>().AsNoTracking().ToListAsync();
     }
 
     public virtual async Task<T?> GetById(Guid id) {
