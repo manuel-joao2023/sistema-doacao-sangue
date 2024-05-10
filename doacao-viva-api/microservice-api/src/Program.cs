@@ -15,7 +15,9 @@ var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
-builder.Services.AddDbContext<DoacaoVivaContext>(contextOptions => contextOptions.UseNpgsql(builder.Configuration.GetConnectionString("DefaultConnection")));
+builder.Services.AddDbContext<DoacaoVivaContext>(contextOptions => 
+    contextOptions.UseNpgsql(builder.Configuration.GetConnectionString("DefaultConnection")
+));
 builder.Services.Configure<JwtAuth>(builder.Configuration.GetSection(nameof(JwtAuth))); 
 builder.Services.Configure<NotificationSetings>(builder.Configuration.GetSection(nameof(NotificationSetings)));
 
@@ -49,8 +51,8 @@ builder.Services.AddSwaggerGen(option => {
             Email = "manuel115@live.com.pt",
         },
         License = new() { 
-            Name = "MIT", 
-            Url=new Uri("https://example.com/license") 
+            Name = "GNU General Public License v3.0", 
+            Url=new Uri("https://github.com/manuel-joao2023/sistema-doacao-sangue/blob/main/LICENSE") 
         }
     });
     option.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme {
