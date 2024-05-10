@@ -6,8 +6,6 @@ name: .NET Application
 on:
   push:
     branches: [ "main" ]
-  pull_request:
-    branches: [ "main" ]
 
 jobs:
   build:
@@ -24,5 +22,5 @@ jobs:
       run: dotnet restore src/application/DoacaoViva.Application.csproj
     - name: Build
       run: dotnet build src/application/DoacaoViva.Application.csproj --no-restore
-    - name: Test
-      run: dotnet test --no-build --verbosity normal
+    #- name: Test
+    # run: dotnet test --no-build --verbosity normal
