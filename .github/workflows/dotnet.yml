@@ -34,13 +34,12 @@ jobs:
     - name: Setup .NET
       uses: actions/setup-dotnet@v1
       with:
-        dotnet-version: 6.0.x
-
+        dotnet-version: 7.0.x
     - name: Get project name
       id: get_project_name
       run: |
         project_name=""
-        for file in $(find . -name '*.csproj'); do
+        for file in $(find . -name '*.csproj' -not -path './path/to/ignore/*' -not -name 'ignore.csproj'); do
           if git log -1 --pretty=format:%s $file | grep -q "$COMMIT_SHA"; then
             project_name=$(basename $file)
             break
@@ -50,13 +49,13 @@ jobs:
           echo "Failed to find project name, please check the commit."
           exit 1
         fi
-        echo "::set-output name=project_name::$project_name"
-
+        echo "project_name=${project_name}" >> $GITHUB_ENV
+        
     - name: Restore dependencies
-      run: dotnet restore ${{ steps.get_project_name.outputs.project_name }}
+      run: dotnet restore ${{ env.project_name }}
 
     - name: Build
-      run: dotnet build ${{ steps.get_project_name.outputs.project_name }} --configuration Release
+      run: dotnet build ${{ env.project_name }} --configuration Release
 
     - name: Test
-      run: dotnet test ${{ steps.get_project_name.outputs.project_name }} --configuration Release --no-build --verbosity normal
+      run: dotnet test ${{ env.project_name }} --configuration Release --no-build --verbosity normal
